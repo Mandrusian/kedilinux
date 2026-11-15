@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kedi-installer</Name>
+        <Homepage>https://kedilinux.org</Homepage>
+        <Packager>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>data</IsA>
+        <PartOf>system.installer</PartOf>
+        <Summary>kedi-installer is the calamares for Kedi GNU/Linux</Summary>
+        <Description>kedi-installeer is the calamares for Kedi GNU/Linux. It installed LXQt and LightDM as default for a Kedi GNU/Linux system.</Description>
+        <Archive sha1sum="e922c60c33c9b63c643a2b32701394071856b8a1" type="targz">https://repo.kedilinux.org/src/kedi-installer-1.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>kedi-installer</Name>
+        <RuntimeDependencies>
+            <Dependency>sudo</Dependency>
+            <Dependency>lightdm</Dependency>
+            <Dependency>calamares</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2026-11-15</Date>
+            <Version>1</Version>
+            <Comment>First release, for Kedi Linux</Comment>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Update>
+    </History>
+</PISI>
