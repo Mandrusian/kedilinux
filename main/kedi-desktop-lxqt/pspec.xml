@@ -47,9 +47,8 @@
             <Dependency>pipewire</Dependency>
             <Dependency>wireplumber</Dependency>
             <Dependency>pavucontrol-qt</Dependency>
-            <Dependency>NetworkManager</Dependency>
-            <Dependency>NetworkManager-openrc</Dependency>
-            <Dependency>network-manager-applet</Dependency>
+            <Dependency>iwd</Dependency>
+            <Dependency>iwd-openrc</Dependency>
             <Dependency>lightdm</Dependency>
             <Dependency>lightdm-gtk-greeter</Dependency>
             <Dependency>lightdm-openrc</Dependency>
@@ -66,6 +65,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="5">
+            <Date>2026-11-16</Date>
+            <Version>5</Version>
+            <Comment>Replace nm with iwd</Comment>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Update>
         <Update release="4">
             <Date>2026-11-15</Date>
             <Version>4</Version>
