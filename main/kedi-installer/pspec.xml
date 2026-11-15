@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <PartOf>system.installer</PartOf>
         <Summary>kedi-installer is the calamares for Kedi GNU/Linux</Summary>
-        <Description>kedi-installeer is the calamares for Kedi GNU/Linux. It installed LXQt and LightDM as default for a Kedi GNU/Linux system.</Description>
+        <Description>kedi-installer contains the Calamares settings, branding and live-session permissions for the Kedi GNU/Linux live ISO. Calamares removes it after installing.</Description>
         <Archive sha1sum="e922c60c33c9b63c643a2b32701394071856b8a1" type="targz">https://repo.kedilinux.org/src/kedi-installer-1.tar.gz</Archive>
     </Source>
     <Package>
@@ -20,7 +20,7 @@
         <RuntimeDependencies>
             <Dependency>sudo</Dependency>
             <Dependency>lightdm</Dependency>
-            <Dependency>calamares</Dependency>
+            <Dependency>Calamares</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
