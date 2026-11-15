@@ -20,10 +20,6 @@ except ImportError:
     import xml.etree.ElementTree as ET
 
 PISI_INDEX = "https://stable2.pisilinux.org/pisi-index.xml.xz"
-
-# Pisi's system.base packages that aren't base on Kedi. Pisi's safety switch installs all
-# of system.base, so these move to util.admin: still installable, and unlike blacklisted
-# packages, `pisi up` keeps updating them.
 NOT_BASE = ["rsyslog", "vixie-cron", "libee", "libestr", "libfastjson", "liblogging"]
 NOT_BASE_COMPONENT = "util.admin"
 
