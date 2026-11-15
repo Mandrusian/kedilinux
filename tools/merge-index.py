@@ -21,6 +21,12 @@ except ImportError:
 
 PISI_INDEX = "https://stable2.pisilinux.org/pisi-index.xml.xz"
 
+# Pisi's system.base packages that aren't base on Kedi. Pisi's safety switch installs all
+# of system.base, so these move to util.admin: still installable, and unlike blacklisted
+# packages, `pisi up` keeps updating them.
+NOT_BASE = ["rsyslog", "vixie-cron", "libee", "libestr", "libfastjson", "liblogging"]
+NOT_BASE_COMPONENT = "util.admin"
+
 
 def sha1_file(path):
     h = hashlib.sha1()
@@ -79,12 +85,17 @@ def main():
     merged.text, merged.tail = pisi.text, pisi.tail
     pisi_count = 0
     replaced = []
+    moved = []
     for element in list(pisi):
         if element.tag == "Package":
             name = element.findtext("Name")
             if name in kedi_names:
                 replaced.append((name, version(element)))
                 continue
+            part_of = element.find("PartOf")
+            if name in NOT_BASE and part_of is not None and part_of.text == "system.base":
+                part_of.text = NOT_BASE_COMPONENT
+                moved.append(name)
             pisi_count += 1
         elif element.tag == "Distribution":
             obsoletes = element.find("Obsoletes")
@@ -114,6 +125,8 @@ def main():
     print("%d packages from Pisi, %d from Kedi" % (pisi_count, len(kedi_packages)))
     for name, pisi_version in sorted(replaced):
         print("  %s: Kedi %s replaces Pisi %s" % (name, kedi_versions[name], pisi_version))
+    if moved:
+        print("  moved from system.base to %s: %s" % (NOT_BASE_COMPONENT, " ".join(sorted(moved))))
     print("Wrote %s/pisi-index.xml%s" % (args.output, "" if args.skip_signing else " (signed)"))
 
 
