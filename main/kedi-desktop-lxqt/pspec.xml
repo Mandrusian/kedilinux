@@ -49,6 +49,7 @@
             <Dependency>pavucontrol-qt</Dependency>
             <Dependency>iwd</Dependency>
             <Dependency>iwd-openrc</Dependency>
+            <Dependency>dhcpcd-openrc</Dependency>
             <Dependency>lightdm</Dependency>
             <Dependency>lightdm-gtk-greeter</Dependency>
             <Dependency>lightdm-openrc</Dependency>
@@ -67,7 +68,7 @@
     <History>
         <Update release="5">
             <Date>2026-11-16</Date>
-            <Version>5</Version>
+            <Version>4</Version>
             <Comment>Replace nm with iwd</Comment>
             <Name>Lemi Sander</Name>
             <Email>kedilinux@tuta.com</Email>
