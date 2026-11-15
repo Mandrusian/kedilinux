@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kedi-desktop-lxqt</Name>
+        <Homepage>https://kedilinux.org</Homepage>
+        <Packager>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <License>Unsplash</License>
+        <License>GPLv2</License>
+        <IsA>data</IsA>
+        <PartOf>desktop.lxqt</PartOf>
+        <Summary>kedi-desktop-lxqt contains required packages for a Kedi GNU/Linux LXQt system</Summary>
+        <Description>kedi-desktop-lxqt contains required packages for a Kedi GNU/Linux system. It is automatically installed on a graphical installation, but must be install manually otherwise.</Description>
+        <Archive sha1sum="f5ac4e507996bcf18847e193654cc8627413f5b7" type="targz">https://repo.kedilinux.org/src/kedi-desktop-lxqt-1.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>kedi-desktop-lxqt</Name>
+        <RuntimeDependencies>
+            <Dependency>xorg-server</Dependency>
+            <Dependency>xkeyboard-config</Dependency>
+            <Dependency>xorg-input-libinput</Dependency>
+            <Dependency>dejavu-fonts</Dependency>
+            <Dependency>elogind-openrc</Dependency>
+            <Dependency>openbox</Dependency>
+            <Dependency>obconf-qt</Dependency>
+            <Dependency>lxqt-session</Dependency>
+            <Dependency>lxqt-panel</Dependency>
+            <Dependency>pcmanfm-qt</Dependency>
+            <Dependency>lxqt-runner</Dependency>
+            <Dependency>lxqt-globalkeys</Dependency>
+            <Dependency>lxqt-notificationd</Dependency>
+            <Dependency>lxqt-policykit</Dependency>
+            <Dependency>lxqt-powermanagement</Dependency>
+            <Dependency>lxqt-config</Dependency>
+            <Dependency>lxqt-qtplugin</Dependency>
+            <Dependency>lxqt-themes</Dependency>
+            <Dependency>lxqt-menu-data</Dependency>
+            <Dependency>qterminal</Dependency>
+            <Dependency>featherpad</Dependency>
+            <Dependency>lximage-qt</Dependency>
+            <Dependency>screengrab</Dependency>
+            <Dependency>lxqt-archiver</Dependency>
+            <Dependency>pipewire</Dependency>
+            <Dependency>wireplumber</Dependency>
+            <Dependency>pavucontrol-qt</Dependency>
+            <Dependency>NetworkManager</Dependency>
+            <Dependency>NetworkManager-openrc</Dependency>
+            <Dependency>network-manager-applet</Dependency>
+            <Dependency>lightdm</Dependency>
+            <Dependency>lightdm-gtk-greeter</Dependency>
+            <Dependency>lightdm-openrc</Dependency>
+            <Dependency>lxqt-sudo</Dependency>
+            <Dependency>lxqt-about</Dependency>
+            <Dependency>lxqt-admin</Dependency>
+            <Dependency>qps</Dependency>
+            <Dependency>qlipper</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2026-11-15</Date>
+            <Version>1</Version>
+            <Comment>First release, for Kedi Linux</Comment>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Update>
+    </History>
+</PISI>
