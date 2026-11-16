@@ -11,7 +11,7 @@
         <License>GPLv3</License>
         <IsA>data</IsA>
         <Summary>kedi-base contains required files and setup for a Kedi Linux system</Summary>
-        <Description>kedi-base contains required files and setup for a Kedi Linux system. It is automatically installed on a graphical installation, but must be install manually otherwise.</Description
+        <Description>kedi-base contains required files and setup for a Kedi Linux system. It is automatically installed on a graphical installation, but must be install manually otherwise.</Description>
 	<Archive sha1sum="65d52c2a8decad6fc5926d071f6e3d19c84c24be" type="targz">https://repo.kedilinux.org/src/kedi-base-4.tar.gz</Archive>
     </Source>
     <Package>
