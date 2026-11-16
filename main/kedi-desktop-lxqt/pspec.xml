@@ -15,7 +15,7 @@
         <PartOf>desktop.lxqt</PartOf>
         <Summary>kedi-desktop-lxqt contains required packages for a Kedi GNU/Linux LXQt system</Summary>
         <Description>kedi-desktop-lxqt contains required packages for a Kedi GNU/Linux system. It is automatically installed on a graphical installation, but must be install manually otherwise.</Description>
-        <Archive sha1sum="edf814335e15ee1edc7979fa13e4779f6b0af397" type="targz">https://repo.kedilinux.org/src/kedi-desktop-lxqt-5.tar.gz</Archive>
+        <Archive sha1sum="5d6fb4f8aca1dfa890aa43ed94a1f151512d6764" type="targz">https://repo.kedilinux.org/src/kedi-desktop-lxqt-6.tar.gz</Archive>
     </Source>
     <Package>
         <Name>kedi-desktop-lxqt</Name>
@@ -67,6 +67,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="7">
+            <Date>2026-11-16</Date>
+            <Version>6</Version>
+            <Comment>Prepare new targz for updated iso--</Comment>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Update>
         <Update release="6">
             <Date>2026-11-16</Date>
             <Version>5</Version>
