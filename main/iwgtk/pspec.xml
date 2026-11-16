@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>iwgtk</Name>
+        <Homepage>https://github.com/J-Lentz/iwgtk</Homepage>
+        <Packager>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:gui</IsA>
+        <Summary>Graphical frontend for iwd</Summary>
+        <Description>Adds a graphical frontend for iwd. This package is preinstalled on the LXQt ISO.</Description>
+        <Archive sha1sum="857af211ac168ac6df8925cc8032fd0c4ede2153" type="targz">https://github.com/J-Lentz/iwgtk/archive/refs/tags/v0.9.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk4-devel</Dependency>
+            <Dependency>scdoc</Dependency>
+            <Dependency>qrencode-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>iwgtk</Name>
+        <PartOf>network.connection</PartOf>
+        <RuntimeDependencies>
+            <Dependency>iwd</Dependency>
+            <Dependency>qrencode</Dependency>
+            <Dependency>gtk4</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2026-11-16</Date>
+            <Version>0.9</Version>
+            <Comment>First release, for Kedi Linux</Comment>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Update>
+    </History>
+</PISI>
