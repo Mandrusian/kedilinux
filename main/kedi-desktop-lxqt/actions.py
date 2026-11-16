@@ -21,3 +21,5 @@ def install():
     pisitools.insinto("/etc", "etc/lxqt")
     pisitools.insinto("/etc", "etc/pcmanfm-qt")
     pisitools.insinto("/etc", "etc/openbox")
+    pisitools.insinto("/etc", "etc/autostart")
+    pisitools.dobin("usr/bin/kedi-pipewire")
