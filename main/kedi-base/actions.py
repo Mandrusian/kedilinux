@@ -18,3 +18,5 @@ def install():
     pisitools.insinto("/etc/tmpfiles.d", "udev.conf")
     pisitools.dodir("/etc/mudur/services/disabled")
     pisitools.dosym("../proc/self/mounts", "/etc/mtab")
+    pisitools.insinto("/usr/share/kedi", "kedi-fastfetch-logo.txt")
+    pisitools.insinto("/etc/fastfetch", "config.jsonc")
