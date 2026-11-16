@@ -15,7 +15,7 @@
         <PartOf>desktop.lxqt</PartOf>
         <Summary>kedi-desktop-lxqt contains required packages for a Kedi GNU/Linux LXQt system</Summary>
         <Description>kedi-desktop-lxqt contains required packages for a Kedi GNU/Linux system. It is automatically installed on a graphical installation, but must be install manually otherwise.</Description>
-        <Archive sha1sum="5d6fb4f8aca1dfa890aa43ed94a1f151512d6764" type="targz">https://repo.kedilinux.org/src/kedi-desktop-lxqt-6.tar.gz</Archive>
+        <Archive sha1sum="2e198e757a6405f3f6c7f97fb559a284e1a49a6e" type="targz">https://repo.kedilinux.org/src/kedi-desktop-lxqt-7.tar.gz</Archive>
     </Source>
     <Package>
         <Name>kedi-desktop-lxqt</Name>
@@ -59,6 +59,7 @@
             <Dependency>qps</Dependency>
             <Dependency>qlipper</Dependency>
             <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>iwgtk</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -67,10 +68,17 @@
         </Files>
     </Package>
     <History>
+        <Update release="8">
+            <Date>2026-11-16</Date>
+            <Version>7</Version>
+            <Comment>Polish desktop theme with icon fixes</Comment>
+            <Name>Lemi Sander</Name>
+            <Email>kedilinux@tuta.com</Email>
+        </Update>
         <Update release="7">
             <Date>2026-11-16</Date>
             <Version>6</Version>
-            <Comment>Prepare new targz for updated iso--</Comment>
+            <Comment>Prepare new targz for updated iso</Comment>
             <Name>Lemi Sander</Name>
             <Email>kedilinux@tuta.com</Email>
         </Update>
