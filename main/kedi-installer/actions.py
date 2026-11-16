@@ -17,3 +17,4 @@ def install():
     pisitools.insinto("/etc", "etc/conf.d")
     pisitools.insinto("/etc", "etc/profile.d")
     pisitools.dobin("usr/bin/kedi-installer-session")
+    pisitools.dobin("usr/bin/kedi-sync-locale")
