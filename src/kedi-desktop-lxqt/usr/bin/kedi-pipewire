@@ -1,0 +1,6 @@
+#!/bin/sh
+# Start PipeWire for this session: Kedi has no systemd user services.
+pipewire &
+sleep 1
+wireplumber &
+exec pipewire-pulse

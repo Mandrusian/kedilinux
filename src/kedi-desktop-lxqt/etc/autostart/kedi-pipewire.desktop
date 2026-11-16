@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=PipeWire
+Exec=/usr/bin/kedi-pipewire
+OnlyShowIn=LXQt;
+NoDisplay=true
